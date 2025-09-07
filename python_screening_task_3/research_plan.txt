@@ -1,0 +1,26 @@
+Research Plan for Evaluating Open Source AI Models in Student Competence Analysis
+
+Approach to Identifying and Evaluating Relevant Models:
+The approach begins by surveying open source AI models, especially Large Language Models (LLMs) and NLP frameworks with proven capabilities in educational contexts. 
+Notable candidates include educational AI projects like AI4ED from Northeastern University, which focus on task-specific LLM fine-tuning and prompt engineering for personalized student feedback, and OpenPrompt, an extensible prompt-learning framework supporting multiple pre-trained models that can integrate customized templates and verbalizers for nuanced prompt generation. Evaluation criteria would include the model's adaptability to analyze student-written Python code, its ability to generate insightful and pedagogically relevant prompts without giving away direct solutions, and its capability to flag misconceptions or conceptual gaps. 
+Suitability also hinges on ease of integration, interpretability of outputs for educators, and ethical considerations such as data privacy and fairness. 
+The evaluation process will involve setting up experimental tasks where models analyze real student code snippets, generate diagnostic prompts, and produce feedback, with results assessed for accuracy, relevance, and depth.
+
+Testing and Validation of Model Applicability:
+Validation would proceed by crafting a Python-centric dataset of student code excerpts with known conceptual competencies and typical errors. 
+The selected model(s) would be tested to see if they can reliably classify or analyze these code samples, generate prompts that probe deeper understanding, and identify reasoning gaps without supplying direct answers. 
+User studies involving educators could lend additional qualitative feedback on prompt usefulness and clarity. Quantitative metrics such as precision, recall for error identification, and rubric-based evaluation for prompt quality would be applied. 
+Trade-offs between computational cost, model interpretability, and accuracy would be carefully documented. The rationale for model selection will weigh the model's strength in natural language understanding combined with code analysis capabilities (for instance, an LLM fine-tuned on code and educational prompts). 
+Limitations might include challenges with subtle misconceptions, scalability to diverse learning levels, or balancing prompt depth with student cognitive load.
+
+Reasoning and Decision-Making Summary:
+A model suitable for high-level competence analysis must couple deep language understanding with domain-specific insight—in this case, Python programming concepts. 
+It should also encourage metacognition via thought-provoking prompts rather than simple correctness checks. 
+Testing meaningful prompt generation involves both quantitative coding task performance and qualitative educator evaluation. 
+Trade-offs emerge as highly accurate, large models can be costly and opaque, while more interpretable models may lack depth. 
+The choice to evaluate AI4ED stems from its direct educational focus and support for LLM customization, and OpenPrompt for prompt engineering flexibility, their strengths lie in extensibility and educational alignment; 
+their limitations may involve the need for substantial fine-tuning and domain-specific data to reach optimal performance.
+
+
+This plan outlines a practical, multi-faceted evaluation strategy combined with thoughtful reasoning about model capabilities, costs, and educational impact. 
+It emphasizes the importance of both quantitative and qualitative assessments to ensure AI-generated prompts genuinely enhance high-level student competence analysis in Python learning contexts. References to these models and frameworks can be found in the linked GitHub repositories and recent educational AI literature.
